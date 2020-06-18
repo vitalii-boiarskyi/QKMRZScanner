@@ -52,7 +52,7 @@ class QKCutoutView: UIView {
     }
     
     fileprivate func calculateCutoutRect() -> CGRect {
-        let documentFrameRatio = CGFloat(1.42) // Passport's size (ISO/IEC 7810 ID-3) is 125mm × 88mm
+        /*let documentFrameRatio = CGFloat(1.42) // Passport's size (ISO/IEC 7810 ID-3) is 125mm × 88mm
         let (width, height): (CGFloat, CGFloat)
         
         if bounds.height > bounds.width {
@@ -66,7 +66,7 @@ class QKCutoutView: UIView {
         
         let topOffset = (bounds.height - height) / 2
         let leftOffset = (bounds.width - width) / 2
-        
-        return CGRect(x: leftOffset, y: topOffset, width: width, height: height)
+        */
+        return CGRect(x: 0, y: 0, width: bounds.width, height: bounds.height)
     }
 }
